@@ -1,5 +1,5 @@
 #修改TNAME: JDCLOUD-RE-SP-01B 中的JDCLOUD-RE-SP-01B为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build Padavan
+name: Build Padavan for JDC
 
 on: 
   release:
@@ -137,5 +137,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-packages
+        name: JDC-padavan
         path: /opt/images
